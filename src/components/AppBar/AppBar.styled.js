@@ -5,7 +5,7 @@ export const Header = styled.header`
   justify-content: space-between;
   align-items: center;
   background: ${({ theme }) => theme.colors.cardBackground};
-  padding: 20px 20px;
+  padding: 20px 30px;
   box-shadow: ${({ theme }) => theme.boxShadow};
 `;
 
