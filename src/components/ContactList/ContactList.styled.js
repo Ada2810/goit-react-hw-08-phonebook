@@ -6,6 +6,8 @@ export const ListWrap = styled.ul`
   align-items: center;
   flex-direction: column;
   padding: ${(p) => p.theme.spacing.md}; 
+  overflow-y: auto;
+  max-height: 400px;
 `;
 
 export const List = styled.li`
@@ -14,6 +16,7 @@ export const List = styled.li`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 20px; 
   font-size: ${(p) => p.theme.fonts.main}; 
   color: ${(p) => p.theme.colors.text}; 
 `;

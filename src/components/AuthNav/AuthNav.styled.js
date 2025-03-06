@@ -19,4 +19,9 @@ export const Link = styled(NavLink)`
     background-color: ${({ theme }) => theme.colors.primary};
     color: ${({ theme }) => theme.colors.buttonText};
   }
+
+   &:hover {
+    background: ${({ theme }) => theme.colors.secondary};
+    transform: translateY(-2px);
+  }
 `;

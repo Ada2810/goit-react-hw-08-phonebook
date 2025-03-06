@@ -36,7 +36,7 @@ export const LoginForm = () => {
 
   return (
     <Container>
-      <Title>Login</Title>
+      <Title>Log in</Title>
       <Form onSubmit={handleSubmit}>
         {error && <p style={{ color: 'red', textAlign: 'center' }}>{error}</p>}
         <ContainerBox>
@@ -61,7 +61,7 @@ export const LoginForm = () => {
           <Span></Span>
           <Span></Span>
           <Span></Span>
-          Login
+          Log in
         </Button>
       </Form>
     </Container>

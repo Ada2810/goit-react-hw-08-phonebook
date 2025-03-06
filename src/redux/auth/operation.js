@@ -17,7 +17,7 @@ const clearAuthHeader = () => {
 export const register = createAsyncThunk('auth/register', async (credentials, thunkAPI) => {
   try {
     const { data } = await axios.post('/users/signup', credentials);
-    setAuthHeader(data.token); // ✅ Adăugat setAuthHeader
+    setAuthHeader(data.token); 
     return data;
   } catch (error) {
     return thunkAPI.rejectWithValue(error.response.data);
@@ -28,11 +28,13 @@ export const register = createAsyncThunk('auth/register', async (credentials, th
 export const logIn = createAsyncThunk('auth/login', async (credentials, thunkAPI) => {
   try {
     const { data } = await axios.post('/users/login', credentials);
+    setAuthHeader(data.token);  
     return data;
   } catch (error) {
     return thunkAPI.rejectWithValue(error.response?.data?.message || 'Invalid email or password');
   }
 });
+
 
 // Logout
 export const logOut = createAsyncThunk('auth/logout', async (_, thunkAPI) => {

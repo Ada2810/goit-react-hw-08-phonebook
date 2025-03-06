@@ -1,18 +1,19 @@
 import styled from '@emotion/styled';
 
-export const Form = styled.form``;
+export const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+`;
 
 export const Container = styled.div`
-  position: absolute;
-  top: 50%;
-  left: 50%;
   width: 400px;
   padding: 40px;
-  transform: translate(-50%, -50%);
   background: ${({ theme }) => theme.colors.cardBackground};
   box-sizing: border-box;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  margin: 0 auto;
 `;
 
 export const ContainerBox = styled.div`
@@ -34,11 +35,10 @@ export const Title = styled.h2`
 `;
 
 export const Input = styled.input`
-  width: 100%;
+  width: 92%;
   padding: 10px;
   font-size: 16px;
   color: ${({ theme }) => theme.colors.text};
-  margin-bottom: 20px;
   border: 2px solid ${({ theme }) => theme.colors.inputBorder};
   border-radius: 5px;
   outline: none;
@@ -51,7 +51,7 @@ export const Input = styled.input`
 `;
 
 export const Button = styled.button`
-  display: inline-block;
+  display: block;
   width: 100%;
   padding: 10px;
   background-color: ${({ theme }) => theme.colors.primary};
