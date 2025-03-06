@@ -3,11 +3,12 @@ import styled from '@emotion/styled';
 export const ListWrap = styled.ul`
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: space-between;
   flex-direction: column;
   padding: ${(p) => p.theme.spacing.md}; 
   overflow-y: auto;
   max-height: 400px;
+width: 15%;
 `;
 
 export const List = styled.li`
